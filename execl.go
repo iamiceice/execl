@@ -60,7 +60,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	http.HandleFunc("/", index)
+	http.HandleFunc("/")
 	err := http.ListenAndServe(":8000", nil)
 	if err != nil {
 		panic(err)
